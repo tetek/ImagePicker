@@ -14,7 +14,7 @@ open class TopView: UIView {
     static let height: CGFloat = 34
   }
 
-  var configuration = ImagePickerConfiguration()
+  var configuration = ConfigurationUI()
 
   var currentFlashIndex = 0
   let flashButtonTitles = ["AUTO", "ON", "OFF"]
@@ -50,7 +50,7 @@ open class TopView: UIView {
 
   // MARK: - Initializers
 
-  public init(configuration: ImagePickerConfiguration? = nil) {
+  public init(configuration: ConfigurationUI? = nil) {
     if let configuration = configuration {
       self.configuration = configuration
     }

@@ -2,9 +2,9 @@ import UIKit
 
 class ImageGalleryLayout: UICollectionViewFlowLayout {
 
-  let configuration: ImagePickerConfiguration
+  let configuration: ConfigurationUI
 
-  init(configuration: ImagePickerConfiguration) {
+  init(configuration: ConfigurationUI) {
     self.configuration = configuration
     super.init()
   }
